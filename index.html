@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Harbinger Music Partners</title>
+
+  <style>
+
+    *{
+
+      margin:0;
+
+      padding:0;
+
+      box-sizing:border-box;
+
+      font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    body{
+
+      background:#0f0f0f;
+
+      color:white;
+
+      line-height:1.6;
+
+    }
+
+    header{
+
+      background:linear-gradient(to right,#111,#1d1d1d,#111);
+
+      padding:30px 20px;
+
+      text-align:center;
+
+      border-bottom:3px solid #c40018;
+
+    }
+
+    .logo{
+
+      max-width:450px;
+
+      width:100%;
+
+      margin-bottom:20px;
+
+    }
+
+    header h1{
+
+      font-size:3rem;
+
+      color:#ffffff;
+
+      letter-spacing:2px;
+
+    }
+
+    header p{
+
+      color:#d0d0d0;
+
+      margin-top:10px;
+
+      font-size:1.1rem;
+
+    }
+
+    nav{
+
+      background:#c40018;
+
+      padding:15px;
+
+      text-align:center;
+
+    }
+
+    nav a{
+
+      color:white;
+
+      text-decoration:none;
+
+      margin:0 15px;
+
+      font-weight:bold;
+
+      transition:0.3s;
+
+    }
+
+    nav a:hover{
+
+      color:#000;
+
+    }
+
+    .hero{
+
+      background:url('287C75A5-6B13-4D12-A573-21FC9A7AE234.jpeg') center/cover no-repeat;
+
+      height:70vh;
+
+      display:flex;
+
+      align-items:center;
+
+      justify-content:center;
+
+      text-align:center;
+
+      position:relative;
+
+    }
+
+    .hero::before{
+
+      content:'';
+
+      position:absolute;
+
+      inset:0;
+
+      background:rgba(0,0,0,0.65);
+
+    }
+
+    .hero-content{
+
+      position:relative;
+
+      z-index:2;
+
+      max-width:800px;
+
+      padding:20px;
+
+    }
+
+    .hero h2{
+
+      font-size:3rem;
+
+      margin-bottom:20px;
+
+      color:#fff;
+
+    }
+
+    .hero p{
+
+      font-size:1.2rem;
+
+      color:#ddd;
+
+    }
+
+    .btn{
+
+      display:inline-block;
+
+      margin-top:25px;
+
+      background:#c40018;
+
+      color:white;
+
+      padding:14px 30px;
+
+      text-decoration:none;
+
+      border-radius:5px;
+
+      font-weight:bold;
+
+      transition:0.3s;
+
+    }
+
+    .btn:hover{
+
+      background:white;
+
+      color:#c40018;
+
+    }
+
+    section{
+
+      padding:70px 10%;
+
+    }
+
+    .section-title{
+
+      text-align:center;
+
+      margin-bottom:40px;
+
+    }
+
+    .section-title h2{
+
+      font-size:2.5rem;
+
+      color:#c40018;
+
+    }
+
+    .services{
+
+      display:grid;
+
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+      gap:25px;
+
+    }
+
+    .service-box{
+
+      background:#1a1a1a;
+
+      padding:30px;
+
+      border-radius:12px;
+
+      transition:0.3s;
+
+      border:1px solid #2b2b2b;
+
+    }
+
+    .service-box:hover{
+
+      transform:translateY(-5px);
+
+      border-color:#c40018;
+
+    }
+
+    .service-box h3{
+
+      color:#c40018;
+
+      margin-bottom:15px;
+
+    }
+
+    .gallery{
+
+      display:grid;
+
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+      gap:20px;
+
+    }
+
+    .gallery img{
+
+      width:100%;
+
+      border-radius:12px;
+
+      border:2px solid #c40018;
+
+    }
+
+    .contact{
+
+      background:#151515;
+
+      border-top:3px solid #c40018;
+
+      text-align:center;
+
+    }
+
+    .contact p{
+
+      font-size:1.1rem;
+
+      margin:10px 0;
+
+    }
+
+    footer{
+
+      background:#0a0a0a;
+
+      text-align:center;
+
+      padding:20px;
+
+      color:#999;
+
+      font-size:0.95rem;
+
+    }
+
+    @media(max-width:768px){
+
+      header h1{
+
+        font-size:2rem;
+
+      }
+
+      .hero h2{
+
+        font-size:2rem;
+
+      }
+
+      .hero p{
+
+        font-size:1rem;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <img src="E99CA2A5-1C17-4A58-8AD1-74D97E384AB4.jpeg" alt="Harbinger Music Logo" class="logo">
+
+    <h1>Harbinger Music Partners</h1>
+
+    <p>
+
+      Chicagoland Music Production • Live Entertainment • Songwriting • Custom Beats
+
+    </p>
+
+  </header>
+
+  <nav>
+
+    <a href="#about">About</a>
+
+    <a href="#services">Services</a>
+
+    <a href="#gallery">Gallery</a>
+
+    <a href="#contact">Contact</a>
+
+  </nav>
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h2>Creating Sound That Leaves A Mark</h2>
+
+      <p>
+
+        Harbinger Music Partners delivers professional music production,
+
+        custom beats, songwriting, live performances, and creative audio
+
+        experiences throughout the Chicagoland area.
+
+      </p>
+
+      <a href="#contact" class="btn">Book With Us</a>
+
+    </div>
+
+  </section>
+
+  <section id="about">
+
+    <div class="section-title">
+
+      <h2>About Us</h2>
+
+    </div>
+
+    <p style="text-align:center; max-width:900px; margin:auto; font-size:1.1rem;">
+
+      Harbinger Music Partners is a Chicagoland-based music company dedicated
+
+      to delivering powerful performances, original music, and professional
+
+      production services. Whether you need custom-made beats, songwriting,
+
+      studio collaboration, or live entertainment for your next event,
+
+      our team is committed to bringing your creative vision to life.
+
+    </p>
+
+  </section>
+
+  <section id="services">
+
+    <div class="section-title">
+
+      <h2>Our Services</h2>
+
+    </div>
+
+    <div class="services">
+
+      <div class="service-box">
+
+        <h3>Custom Beats</h3>
+
+        <p>
+
+          Original, professionally produced beats tailored to your sound and style.
+
+        </p>
+
+      </div>
+
+      <div class="service-box">
+
+        <h3>Music Production</h3>
+
+        <p>
+
+          Full production support for artists, creators, and performers.
+
+        </p>
+
+      </div>
+
+      <div class="service-box">
+
+        <h3>Live Performances</h3>
+
+        <p>
+
+          High-energy live entertainment for events, showcases, and venues.
+
+        </p>
+
+      </div>
+
+      <div class="service-box">
+
+        <h3>Songwriting</h3>
+
+        <p>
+
+          Creative songwriting services for original music and collaborative projects.
+
+        </p>
+
+      </div>
+
+      <div class="service-box">
+
+        <h3>Artist Collaboration</h3>
+
+        <p>
+
+          Work with experienced creatives to elevate your musical vision.
+
+        </p>
+
+      </div>
+
+      <div class="service-box">
+
+        <h3>Audio Branding</h3>
+
+        <p>
+
+          Custom sound design and music solutions for brands and media projects.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="gallery">
+
+    <div class="section-title">
+
+      <h2>Performance Gallery</h2>
+
+    </div>
+
+    <div class="gallery">
+
+      <img src="287C75A5-6B13-4D12-A573-21FC9A7AE234.jpeg" alt="Harbinger Music Performance">
+
+    </div>
+
+  </section>
+
+  <section id="contact" class="contact">
+
+    <div class="section-title">
+
+      <h2>Contact Us</h2>
+
+    </div>
+
+    <p><strong>Location:</strong> Chicagoland Area</p>
+
+    <p>
+
+      <strong>Email:</strong>
+
+      <a href="mailto:harbingermusicpartners@gmail.com" style="color:#ff4d5f;">
+
+        harbingermusicpartners@gmail.com
+
+      </a>
+
+    </p>
+
+    <p>
+
+      <strong>Phone:</strong>
+
+      <a href="tel:8476525037" style="color:#ff4d5f;">
+
+        847-652-5037
+
+      </a>
+
+    </p>
+
+  </section>
+
+  <footer>
+
+    © 2026 Harbinger Music Partners • All Rights Reserved
+
+  </footer>
+
+</body>
+
+</html>
